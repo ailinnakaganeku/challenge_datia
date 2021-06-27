@@ -101,6 +101,9 @@ export const ModalTitle = styled.h1`
   @media (max-width: ${breakpoints.tabletMax}) {
     font-size: 22px;
   }
+  @media (min-height: 810px) {
+    font-size: 25px;
+  }
 `;
 
 export const ModalBody = styled.div`
@@ -132,6 +135,9 @@ export const ModalImage = styled.img`
   @media (max-width: ${breakpoints.mobileMax}) {
     min-height: 10em;
     margin: 10px 0 20px 0;
+  }
+  @media (min-height: 810px) {
+    min-height: 13em;
   }
 `;
 
@@ -166,7 +172,7 @@ export const ModalText = styled.p`
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 9;
     -webkit-box-orient: vertical;
     max-width: 90%;
     text-align: start;
@@ -178,6 +184,14 @@ export const ModalText = styled.p`
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     font-size: 16px;
     line-height: 150%;
+  }
+  @media (min-height: 810px) {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 `;
 
@@ -219,6 +233,9 @@ export const Suggestions = styled.div`
     rgba(25, 20, 20, 1) 50%,
     rgba(103, 147, 207, 1) 100%
   );
+  @media (min-height: 810px) {
+    margin-top:4em;
+  }
 `;
 
 export const Details = styled.div`
