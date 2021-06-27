@@ -1,0 +1,11 @@
+{
+    "en" : {
+        "logo_title" : "Datia Movie",
+        "most_popular": "Most Popular",
+        "filter": "Filter by year",
+        "load": "Load More",
+        "suggestions":"We have this suggestions for you",
+        "back_home":"Go Back Home",
+        "watch_now":"Watch Now"
+    }
+}

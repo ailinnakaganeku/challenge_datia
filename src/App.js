@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import LandingPage from './containers/LandingPage/container';
+import MovieDetail from './containers/MovieDetail/container';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className='App'>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={LandingPage} />
+            <Route exact path='/movie/:movieId' component={MovieDetail} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    </Suspense>
   );
 }
 
