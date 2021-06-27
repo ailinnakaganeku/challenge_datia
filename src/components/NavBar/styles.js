@@ -42,6 +42,7 @@ export const LogoName = styled.h3`
   @media (max-width: ${breakpoints.tabletMax}) {
     font-size: 16px;
   }
+  
 `;
 
 export const Filter = styled.div`
@@ -54,5 +55,8 @@ export const Filter = styled.div`
   }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     width: 160px;
+  }
+  @media (max-width: ${breakpoints.mobileMax}) {
+    font-size: 12px;
   }
 `;

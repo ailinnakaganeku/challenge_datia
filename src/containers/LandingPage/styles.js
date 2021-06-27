@@ -50,6 +50,10 @@ export const Text = styled.h1`
   @media (max-width: ${breakpoints.tabletMax}) {
     font-size: 25px;
   }
+  @media (max-width: ${breakpoints.mobileMax}) {
+    font-size: 18px;
+    text-align: center;
+  }
 `;
 
 export const Line = styled.div`

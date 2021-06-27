@@ -5,5 +5,5 @@ export const breakpoints = {
   mobileMax: '959px',
   tabletMin: '960px',
   tabletMax: '1199px',
-  desktopMin: '1200px',
+  desktopMin: '1000px',
 };

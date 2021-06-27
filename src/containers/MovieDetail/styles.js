@@ -55,6 +55,7 @@ export const Container = styled.div`
   @media (max-width: ${breakpoints.tabletMax}) {
     padding: 40px 0;
   }
+
   @media (min-width: ${breakpoints.iphone}) {
     padding: 50px 0;
   }
@@ -129,7 +130,9 @@ export const ModalImage = styled.img`
     min-height: 10em;
   }
 `;
+
 export const Display = styled.div`
+  display: flex;
   padding: 1em;
 `;
 
@@ -152,7 +155,7 @@ export const ModalText = styled.p`
   max-width: 80%;
   z-index: 1;
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 18px;
+    font-size: 17px;
   }
   @media (max-width: ${breakpoints.mobileMin}) {
     font-size: 16px;
@@ -181,12 +184,12 @@ export const Text = styled.h1`
     text-align: center;
   }
   @media (max-width: ${breakpoints.mobileMin}) {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     max-width: 80%;
   }
   @media (max-width: ${breakpoints.mobileMax}) {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 `;
@@ -224,11 +227,14 @@ export const Background = styled.img`
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: brightness(0.3);
   filter: brightness(0.3);
-  max-height: 150vh;
   object-fit: cover;
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
     min-height: 100vh;
+  }
+  @media (min-width: ${breakpoints.desktopMin}) {
+    min-height: 100vh;
+    max-height: 140vh;
   }
 `;
 
