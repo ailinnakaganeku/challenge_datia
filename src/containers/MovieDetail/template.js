@@ -1,4 +1,12 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
+import { en as string } from '../../assets/strings/eng.json';
+
+//Components
+import GridCard from '../../components/GridCard/container';
+import Button from '../../components/Button/container';
+
+//Styles
 import {
   Container,
   ModalHeader,
@@ -16,11 +24,8 @@ import {
   Display,
 } from './styles';
 import { LogoName } from '../../components/NavBar/styles';
-import { en as string } from '../../assets/strings/eng.json';
-import { HashLink } from 'react-router-hash-link';
-import GridCard from '../../components/GridCard/container';
-import Button from '../../components/Button/container';
 import { Movies, Pagination } from '../LandingPage/styles';
+
 import { nanoid } from 'nanoid';
 
 const TemplateMovieDetail = ({
@@ -94,6 +99,7 @@ const TemplateMovieDetail = ({
                     ? `http://image.tmdb.org/t/p/w1280${movies.backdrop_path}`
                     : 'https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=645&q=80'
                 }
+                alt={movies.original_title}
               />
             </Display>
           </ModalBody>
