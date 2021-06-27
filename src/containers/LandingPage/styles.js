@@ -48,10 +48,10 @@ export const Text = styled.h1`
     text-align: center;
   }
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 25px;
+    font-size: 30px;
   }
   @media (max-width: ${breakpoints.mobileMax}) {
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
   }
 `;

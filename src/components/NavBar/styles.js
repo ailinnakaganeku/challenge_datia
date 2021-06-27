@@ -57,6 +57,6 @@ export const Filter = styled.div`
     width: 160px;
   }
   @media (max-width: ${breakpoints.mobileMax}) {
-    font-size: 15px;
+    width: 170px;
   }
 `;

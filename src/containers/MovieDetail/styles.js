@@ -99,7 +99,7 @@ export const ModalTitle = styled.h1`
     font-size: 19px;
   }
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 22px;
+    font-size: 30px;
   }
 `;
 
@@ -128,6 +128,7 @@ export const ModalImage = styled.img`
   }
   @media (max-width: ${breakpoints.mobileMax}) {
     min-height: 10em;
+    margin: 10px 0 20px 0;
   }
 `;
 
@@ -155,21 +156,21 @@ export const ModalText = styled.p`
   max-width: 80%;
   z-index: 1;
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 17px;
+    font-size: 18px;
   }
   @media (max-width: ${breakpoints.mobileMin}) {
-    font-size: 16px;
+    font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 9;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     max-width: 90%;
     text-align: start;
     line-height: 160%;
   }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 150%;
   }
 `;
