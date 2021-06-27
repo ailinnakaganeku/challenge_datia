@@ -1,7 +1,19 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
 import { colors } from '../../assets/colors';
+import { keyframes } from 'styled-components';
 
+export const animatedLine = keyframes`
+    from {
+        width: 0px;
+        opacity: 0;
+    } 
+
+    to{
+        width: 70px;
+        opacity: 1;
+    }
+`;
 export const Container = styled.div`
   width: 100%;
   display: flex;
@@ -64,6 +76,7 @@ export const Line = styled.div`
   border: 1px solid ${colors.white};
   width: 70px;
   background-color: ${colors.white};
+  animation: ${animatedLine} 1s forwards;
 `;
 
 export const Fragment = styled.div``;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
 import { colors } from '../../assets/colors';
+import { animatedLine } from '../LandingPage/styles';
 
 export const Float = keyframes`
   from {
@@ -246,6 +247,7 @@ export const Line = styled.div`
   border: 1px solid ${colors.white};
   width: 70px;
   background-color: ${colors.white};
+  animation: ${animatedLine} 1s forwards;
 `;
 
 export const Suggestions = styled.div`
