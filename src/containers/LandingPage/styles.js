@@ -55,6 +55,9 @@ export const Text = styled.h1`
     font-size: 30px;
     text-align: center;
   }
+  @media (max-width: 300px) {
+    font-size: 18px;
+  }
 `;
 
 export const Line = styled.div`

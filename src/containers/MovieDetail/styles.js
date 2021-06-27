@@ -60,6 +60,9 @@ export const Container = styled.div`
   @media (min-width: ${breakpoints.iphone}) {
     padding: 50px 0;
   }
+  @media (min-height: 1300px) {
+    padding: 15em 0;
+  }
 `;
 
 export const ModalHeader = styled.div`
@@ -104,6 +107,13 @@ export const ModalTitle = styled.h1`
   @media (min-height: 810px) {
     font-size: 25px;
   }
+  @media (min-height: 1300px) {
+    font-size: 22px;
+    max-width: 100%;
+  }
+  @media (max-width: 300px) {
+    font-size: 18px;
+  }
 `;
 
 export const ModalBody = styled.div`
@@ -137,7 +147,10 @@ export const ModalImage = styled.img`
     margin: 10px 0 20px 0;
   }
   @media (min-height: 810px) {
-    min-height: 13em;
+    min-height: 12em;
+  }
+  @media (min-height: 1300px) {
+    min-height: 8em;
   }
 `;
 
@@ -193,6 +206,17 @@ export const ModalText = styled.p`
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
   }
+  @media (min-height: 1300px) {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  @media (max-width: 300px) {
+    font-size: 16px;
+  }
 `;
 
 export const Text = styled.h1`
@@ -212,6 +236,9 @@ export const Text = styled.h1`
   @media (max-width: ${breakpoints.mobileMax}) {
     font-size: 20px;
     text-align: center;
+  }
+  @media (max-width: 300px) {
+    font-size: 18px;
   }
 `;
 
@@ -234,7 +261,7 @@ export const Suggestions = styled.div`
     rgba(103, 147, 207, 1) 100%
   );
   @media (min-height: 810px) {
-    margin-top:4em;
+    margin-top: 4em;
   }
 `;
 
@@ -257,6 +284,9 @@ export const Background = styled.img`
     height: 100%;
     max-height: 100vh;
   }
+  @media (min-height: 1300px) {
+    max-height: 100vh;
+  }
 `;
 
 export const Span = styled.span`
@@ -275,6 +305,13 @@ export const Span = styled.span`
   }
   @media (max-width: ${breakpoints.mobileMax}) {
     font-size: 15px;
+  }
+  @media (min-height: 1300px) {
+    margin-right: 0.3em;
+    max-width: 100%;
+  }
+  @media (max-width: 300px) {
+    font-size: 14px;
   }
 `;
 
