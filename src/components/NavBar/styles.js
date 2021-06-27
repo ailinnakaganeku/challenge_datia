@@ -32,13 +32,13 @@ export const LogoName = styled.h3`
     font-size: 14px;
   }
   @media (max-width: ${breakpoints.mobileMin}) {
-    font-size: 16px;
+    font-size: 14px;
   }
   @media (max-width: ${breakpoints.mobileMax}) {
-    font-size: 16px;
+    font-size: 14px;
   }
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 

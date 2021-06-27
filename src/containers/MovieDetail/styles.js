@@ -64,7 +64,6 @@ export const Container = styled.div`
 
 export const ModalHeader = styled.div`
   display: flex;
-  height: auto;
   margin-top: 30px;
   padding: 1em;
   flex-direction: column;
@@ -151,31 +150,30 @@ export const ModalText = styled.p`
   font-size: 20px;
   line-height: 184.69%;
   letter-spacing: 0.03em;
-  max-width: 80%;
   color: ${colors.white};
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   max-width: 80%;
   z-index: 1;
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 30px;
+    font-size: 16px;
   }
   @media (max-width: ${breakpoints.mobileMin}) {
-    font-size: 18px;
+    font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     max-width: 90%;
     text-align: start;
     line-height: 160%;
   }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 150%;
   }
 `;
@@ -197,7 +195,6 @@ export const Text = styled.h1`
   @media (max-width: ${breakpoints.mobileMax}) {
     font-size: 20px;
     text-align: center;
-    max-width: 90%;
   }
 `;
 
@@ -226,7 +223,7 @@ export const Details = styled.div`
   z-index: 1;
 `;
 
-export const Background = styled.div`
+export const Background = styled.img`
   width: 100%;
   position: absolute;
   filter: blur(5px);
@@ -234,6 +231,8 @@ export const Background = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: brightness(0.3);
   filter: brightness(0.3);
+  max-height: 150vh;
+  object-fit: cover;
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
     min-height: 100vh;
