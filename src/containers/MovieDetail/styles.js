@@ -60,8 +60,6 @@ export const Container = styled.div`
   }
 `;
 
-export const ModalWrapper = styled.div``;
-
 export const ModalHeader = styled.div`
   display: flex;
   height: auto;

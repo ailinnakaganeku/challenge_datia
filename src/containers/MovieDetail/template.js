@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Container,
   ModalHeader,
-  ModalWrapper,
   ModalTitle,
   ModalBody,
   ModalImage,
@@ -41,7 +40,7 @@ const TemplateMovieDetail = ({
         }
       />
       <Container id={movies.id}>
-        <ModalWrapper>
+        <div>
           <ModalHeader>
             <HashLink to='/' style={{ textDecoration: 'none' }}>
               <LogoName>{string.logo_title}</LogoName>
@@ -123,7 +122,7 @@ const TemplateMovieDetail = ({
               string={string.back_home}
             ></Button>
           </Pagination>
-        </ModalWrapper>
+        </div>
       </Container>
     </>
   );
