@@ -45,4 +45,12 @@ export const Image = styled.img`
     -webkit-box-shadow: 0px 0px 0px;
     -khtml-box-shadow: 0px 0px 0px;
   }
+  @media (max-width: ${breakpoints.mobileMin}) {
+    max-height: 400px;
+    max-width: 300px;
+  }
+  @media (max-width: ${breakpoints.mobileDinosaur}) {
+    max-height: 300px;
+    max-width: 200px;
+  }
 `;
