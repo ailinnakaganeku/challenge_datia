@@ -189,7 +189,7 @@ export const Text = styled.h1`
     max-width: 80%;
   }
   @media (max-width: ${breakpoints.mobileMax}) {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
 `;
