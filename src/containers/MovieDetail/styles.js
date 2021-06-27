@@ -91,7 +91,7 @@ export const ModalTitle = styled.h1`
   transform: translateY(30px);
   opacity: 0;
   animation: ${Float} 1s 0.2s forwards;
-  margin-top: 1em;
+  margin-top: 1.2em;
   @media (max-width: ${breakpoints.mobileMin}) {
     font-size: 20px;
   }
@@ -171,6 +171,9 @@ export const ModalText = styled.p`
     max-width: 90%;
     text-align: start;
     line-height: 160%;
+  }@media (max-width: ${breakpoints.mobileMax}) {
+    font-size: 16px;
+ 
   }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     font-size: 16px;
@@ -235,7 +238,7 @@ export const Background = styled.img`
   object-fit: cover;
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
   }
 `;
 

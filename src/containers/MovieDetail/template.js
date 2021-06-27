@@ -28,6 +28,7 @@ import { LogoName } from '../../components/NavBar/styles';
 import { Movies } from '../LandingPage/styles';
 
 import { nanoid } from 'nanoid';
+import { colors } from '../../assets/colors';
 
 const TemplateMovieDetail = ({
   movies,
@@ -49,7 +50,17 @@ const TemplateMovieDetail = ({
         <div>
           <ModalHeader>
             <HashLink to='/' style={{ textDecoration: 'none' }}>
-              <LogoName>{string.logo_title}</LogoName>
+              <LogoName>
+                <i
+                  className={'fa fa-arrow-left'}
+                  aria-hidden='true'
+                  style={{
+                    color: `${colors.white}`,
+                    marginRight: 5,
+                  }}
+                />
+                {string.logo_title}
+              </LogoName>
             </HashLink>
             <Title>
               <ModalTitle>{movies.original_title}</ModalTitle>
