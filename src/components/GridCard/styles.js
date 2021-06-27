@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
+import { colors } from '../../assets/colors';
 
 export const Container = styled.div`
   position: relative;
@@ -28,10 +29,10 @@ export const Image = styled.img`
   max-width: 250px;
   display: inline-block;
   border-radius: 4px;
-  box-shadow: 10px 10px 5px #4c2882;
-  -moz-box-shadow: 10px 10px 5px #4c2882;
-  -webkit-box-shadow: 10px 10px 5px #4c2882;
-  -khtml-box-shadow: 10px 10px 5px #4c2882;
+  box-shadow: 10px 10px 5px ${colors.violet};
+  -moz-box-shadow: 10px 10px 5px ${colors.violet};
+  -webkit-box-shadow: 10px 10px 5px ${colors.violet};
+  -khtml-box-shadow: 10px 10px 5px ${colors.violet};
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
+import { colors } from '../../assets/colors';
 
 export const Button = styled.button`
   padding: 12px 45px;
@@ -29,7 +30,7 @@ export const Button = styled.button`
   }
 `;
 export const Span = styled.h5`
-  color: #191414;
+  color: ${colors.black};
   font-size: 16px;
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     font-size: 13px;

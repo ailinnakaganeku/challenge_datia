@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TemplateLandingPage from './template';
 import axios from 'axios';
+import { API_KEY, API_URL } from '../../config';
 
 const LandingPage = () => {
   const [movies, setMovies] = useState([]);
@@ -9,7 +10,8 @@ const LandingPage = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [page, setPage] = useState(1);
 
-  const API = `https://api.themoviedb.org/3/discover/movie?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US&sort_by=popularity.desc&page=${page}&primary_release_year=${year}`;
+  const API = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=${page}&primary_release_year=${year}`;
+  
   const headers = {
     'Content-Type': 'application/json',
   };
@@ -47,7 +49,7 @@ const LandingPage = () => {
       console.log(error);
     }
   }
-  
+
   useEffect(() => {
     window.scroll(0, 0);
   }, []);

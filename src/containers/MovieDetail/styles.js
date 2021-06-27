@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { keyframes } from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
+import { colors } from '../../assets/colors';
 
 export const Float = keyframes`
   from {
@@ -79,7 +80,7 @@ export const ModalHeader = styled.div`
   }
 `;
 export const Title = styled.div`
-  color: #fbfaf5;
+  color: ${colors.white};
 `;
 
 export const ModalTitle = styled.h1`
@@ -112,6 +113,9 @@ export const ModalBody = styled.div`
   height: auto;
   animation: ${FadeOut} 0.6s 0.3s ease-in-out forwards;
   @media (max-width: ${breakpoints.mobileMax}) {
+    padding: 1em;
+  }
+  @media (max-width: ${breakpoints.tabletMax}) {
     padding: 1em;
   }
 `;
@@ -148,7 +152,7 @@ export const ModalText = styled.p`
   line-height: 184.69%;
   letter-spacing: 0.03em;
   max-width: 80%;
-  color: #fbfaf5;
+  color: ${colors.white};
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -177,7 +181,7 @@ export const ModalText = styled.p`
 `;
 
 export const Text = styled.h1`
-  color: #fbfaf5;
+  color: ${colors.white};
   text-transform: uppercase;
   line-height: 2.5em;
   max-width: 90%;
@@ -197,9 +201,9 @@ export const Text = styled.h1`
 `;
 
 export const Line = styled.div`
-  border: 1px solid #fbfaf5;
+  border: 1px solid ${colors.white};
   width: 70px;
-  background-color: #fbfaf5;
+  background-color: ${colors.white};
 `;
 
 export const Suggestions = styled.div`
@@ -229,7 +233,6 @@ export const Background = styled.img`
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: brightness(0.3);
   filter: brightness(0.3);
-  object-fit: cover;
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
     min-height: 100vh;
@@ -238,10 +241,12 @@ export const Background = styled.img`
     min-height: 100vh;
     max-height: 140vh;
   }
+  @media (max-width: ${breakpoints.tabletMax}) {
+  }
 `;
 
 export const Span = styled.span`
-  color: #fbfaf5;
+  color: ${colors.white};
   margin-right: 1em;
   padding: 1px;
   @media (max-width: ${breakpoints.mobileMin}) {

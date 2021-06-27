@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
+import { colors } from '../../assets/colors';
 
 export const Container = styled.div`
   width: 100%;
@@ -20,12 +21,9 @@ export const Container = styled.div`
   padding: 0 1rem;
 `;
 
-export const Logo = styled.div`
-  position: relative;
-`;
 export const LogoName = styled.h3`
   position: relative;
-  color: #fbfaf5;
+  color: ${colors.white};
   text-transform: uppercase;
   font-family: 'Holtwood One SC', serif;
   font-family: 'Rowdies', cursive;
@@ -42,7 +40,6 @@ export const LogoName = styled.h3`
   @media (max-width: ${breakpoints.tabletMax}) {
     font-size: 16px;
   }
-  
 `;
 
 export const Filter = styled.div`

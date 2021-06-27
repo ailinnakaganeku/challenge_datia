@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, withRouter } from 'react-router-dom';
 import TemplateMovieDetail from './template';
 import axios from 'axios';
+import { API_KEY, API_URL } from '../../config';
 
 const MovieDetail = (props) => {
   const movieId = props.match.params.movieId;
@@ -29,7 +30,7 @@ const MovieDetail = (props) => {
   const random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
 
   async function getMoviesById() {
-    const API = `https://api.themoviedb.org/3/movie/${movieId}?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US`;
+    const API = `${API_URL}movie/${movieId}?api_key=${API_KEY}&language=en-US`;
     try {
       const response = await axios.get(API, headers);
       if (response) {
@@ -46,7 +47,7 @@ const MovieDetail = (props) => {
   }
 
   async function getMoviesForSuggest() {
-    const API = `https://api.themoviedb.org/3/movie/top_rated?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US&page=${page}`;
+    const API = `${API_URL}movie/top_rated?api_key=${API_KEY}&language=en-US&page=${page}`;
     try {
       const response = await axios.get(API, headers);
       if (response) {

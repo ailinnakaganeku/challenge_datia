@@ -22,10 +22,10 @@ import {
   Background,
   Span,
   Display,
-  ButtonContainer
+  ButtonContainer,
 } from './styles';
 import { LogoName } from '../../components/NavBar/styles';
-import { Movies, Pagination } from '../LandingPage/styles';
+import { Movies } from '../LandingPage/styles';
 
 import { nanoid } from 'nanoid';
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../assets/breakpoints/index';
+import { colors } from '../../assets/colors';
 
 export const Container = styled.div`
   width: 100%;
@@ -34,7 +35,7 @@ export const Pagination = styled.div`
 `;
 
 export const Text = styled.h1`
-  color: #fbfaf5;
+  color: ${colors.white};
   text-transform: uppercase;
   line-height: 2.5em;
   font-size: 40px;
@@ -57,9 +58,9 @@ export const Text = styled.h1`
 `;
 
 export const Line = styled.div`
-  border: 1px solid #fbfaf5;
+  border: 1px solid ${colors.white};
   width: 70px;
-  background-color: #fbfaf5;
+  background-color: ${colors.white};
 `;
 
 export const Fragment = styled.div``;
