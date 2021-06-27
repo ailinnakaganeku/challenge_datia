@@ -224,6 +224,7 @@ export const Background = styled.img`
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: brightness(0.3);
   filter: brightness(0.3);
+  max-height: 150vh;
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
   }
