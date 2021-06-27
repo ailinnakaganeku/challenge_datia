@@ -16,10 +16,16 @@ _👉 add config file with API and API KEYS_
 
 _👉 npm start_
 
-
 ## Stack 📌
 
 React js and Styled Components.
+
+## ToDo:
+
+- [ ] Add Modal with video trailers when user clicks on "Watch Now" button.
+- [ ] Add prop types.
+- [ ] Add more animations.
+- [ ] Improve SEO.
 
 ---
 

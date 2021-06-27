@@ -171,9 +171,9 @@ export const ModalText = styled.p`
     max-width: 90%;
     text-align: start;
     line-height: 160%;
-  }@media (max-width: ${breakpoints.mobileMax}) {
+  }
+  @media (max-width: ${breakpoints.mobileMax}) {
     font-size: 16px;
- 
   }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     font-size: 16px;
@@ -265,4 +265,5 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3em;
 `;
