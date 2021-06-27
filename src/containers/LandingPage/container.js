@@ -28,7 +28,6 @@ const LandingPage = () => {
   };
 
   async function getMovies(API) {
-    setLoading(true);
     try {
       const response = await axios.get(API, headers);
       if (response) {
@@ -42,6 +41,7 @@ const LandingPage = () => {
   }
 
   useEffect(() => {
+    setLoading(true);
     getMovies(API);
   }, [page, year]);
 
