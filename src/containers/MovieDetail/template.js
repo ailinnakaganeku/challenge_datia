@@ -22,6 +22,7 @@ import {
   Background,
   Span,
   Display,
+  ButtonContainer
 } from './styles';
 import { LogoName } from '../../components/NavBar/styles';
 import { Movies, Pagination } from '../LandingPage/styles';
@@ -122,12 +123,12 @@ const TemplateMovieDetail = ({
                 />
               ))}
           </Movies>
-          <Pagination>
+          <ButtonContainer>
             <Button
               handleOnClick={handleOnChangePage}
               string={string.back_home}
             ></Button>
-          </Pagination>
+          </ButtonContainer>
         </div>
       </Container>
     </>

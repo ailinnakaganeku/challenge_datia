@@ -99,7 +99,8 @@ export const ModalTitle = styled.h1`
     font-size: 19px;
   }
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 30px;
+    font-size: 25px;
+    max-width: 90%;
   }
 `;
 
@@ -256,4 +257,10 @@ export const Span = styled.span`
   @media (max-width: ${breakpoints.mobileMax}) {
     font-size: 15px;
   }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
