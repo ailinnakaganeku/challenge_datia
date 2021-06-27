@@ -47,7 +47,7 @@ export const Image = styled.img`
   }
   @media (max-width: ${breakpoints.mobileMin}) {
     max-height: 400px;
-    max-width: 300px;
+    max-width: 350px;
   }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     max-height: 300px;
