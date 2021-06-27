@@ -8,7 +8,6 @@ const LandingPage = () => {
   const [year, setYear] = useState('');
   const [totalPages, setTotalPages] = useState(1);
   const [page, setPage] = useState(1);
-  const [activeFilters, setActiveFilters] = useState(false);
 
   const API = `https://api.themoviedb.org/3/discover/movie?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US&sort_by=popularity.desc&page=${page}&primary_release_year=${year}`;
   const headers = {
@@ -18,8 +17,11 @@ const LandingPage = () => {
   const handleOnChangeYears = (request) => {
     if (!request) {
       setYear('');
+      setMovies([]);
+      setPage(1);
     } else {
       setYear(request.label);
+
     }
   };
 
@@ -31,8 +33,16 @@ const LandingPage = () => {
     try {
       const response = await axios.get(API, headers);
       if (response) {
-        setMovies([...movies, ...response.data.results]);
-        setTotalPages(response.data.total_pages);
+        if (!year) {
+          setMovies([...movies, ...response.data.results]);
+          setTotalPages(response.data.total_pages);
+        } else if (year && page > 1) {
+          setMovies([...movies, ...response.data.results]);
+          setTotalPages(response.data.total_pages);
+        } else {
+          setMovies(response.data.results);
+          setTotalPages(response.data.total_pages);
+        }
       }
       setLoading(false);
     } catch (error) {
