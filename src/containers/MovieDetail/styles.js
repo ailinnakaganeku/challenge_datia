@@ -87,7 +87,7 @@ export const ModalTitle = styled.h1`
   font-style: normal;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 30px;
   letter-spacing: 0.03em;
   transform: translateY(30px);
   opacity: 0;
@@ -100,8 +100,7 @@ export const ModalTitle = styled.h1`
     font-size: 19px;
   }
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 25px;
-    max-width: 90%;
+    font-size: 22px;
   }
 `;
 
@@ -139,6 +138,7 @@ export const ModalImage = styled.img`
 
 export const Display = styled.div`
   display: flex;
+  height: auto;
   padding: 1em;
 `;
 
@@ -161,7 +161,7 @@ export const ModalText = styled.p`
   max-width: 80%;
   z-index: 1;
   @media (max-width: ${breakpoints.tabletMax}) {
-    font-size: 18px;
+    font-size: 30px;
   }
   @media (max-width: ${breakpoints.mobileMin}) {
     font-size: 18px;
@@ -197,6 +197,7 @@ export const Text = styled.h1`
   @media (max-width: ${breakpoints.mobileMax}) {
     font-size: 20px;
     text-align: center;
+    max-width: 90%;
   }
 `;
 
@@ -225,7 +226,7 @@ export const Details = styled.div`
   z-index: 1;
 `;
 
-export const Background = styled.img`
+export const Background = styled.div`
   width: 100%;
   position: absolute;
   filter: blur(5px);
@@ -236,12 +237,6 @@ export const Background = styled.img`
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
     min-height: 100vh;
-  }
-  @media (min-width: ${breakpoints.desktopMin}) {
-    min-height: 100vh;
-    max-height: 140vh;
-  }
-  @media (max-width: ${breakpoints.tabletMax}) {
   }
 `;
 
