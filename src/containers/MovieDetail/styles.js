@@ -225,8 +225,10 @@ export const Background = styled.img`
   -webkit-filter: brightness(0.3);
   filter: brightness(0.3);
   max-height: 150vh;
+  object-fit: cover;
   @media (max-width: ${breakpoints.mobileMax}) {
     height: 100%;
+    min-height: 100vh;
   }
 `;
 

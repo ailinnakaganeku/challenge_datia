@@ -8,6 +8,7 @@ const MovieDetail = (props) => {
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const [suggestedMovies, setSuggestedMovies] = useState([]);
+  const [page, setPage] = useState(1);
 
   const history = useHistory();
 
@@ -18,18 +19,21 @@ const MovieDetail = (props) => {
   useEffect(() => {
     setLoading(true);
     getMoviesForSuggest();
-  }, []);
+  }, [page]);
 
   useEffect(() => {
     setLoading(true);
     getMoviesById();
   }, [movieId]);
 
+  const random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+
   async function getMoviesById() {
     const API = `https://api.themoviedb.org/3/movie/${movieId}?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US`;
     try {
       const response = await axios.get(API, headers);
       if (response) {
+        setPage(random);
         console.log('ACA BY ID');
         console.log(response);
         setMovies(response.data);
@@ -42,7 +46,7 @@ const MovieDetail = (props) => {
   }
 
   async function getMoviesForSuggest() {
-    const API = `https://api.themoviedb.org/3/movie/top_rated?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US&page=1`;
+    const API = `https://api.themoviedb.org/3/movie/top_rated?api_key=3504a963b5eddb74923319a7e1dab880&language=en-US&page=${page}`;
     try {
       const response = await axios.get(API, headers);
       if (response) {
