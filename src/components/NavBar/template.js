@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, LogoName, Filter } from './styles';
 import Select from 'react-select';
 import { en as string } from '../../assets/strings/eng.json';
-import { colors } from '../../assets/colors';
 
 const TemplateNavBar = ({ handleOnChangeYears, isDisabled }) => {
   const yearOptions = [];
