@@ -18,10 +18,8 @@ const LandingPage = () => {
     if (!request) {
       setYear('');
       setMovies([]);
-      setPage(1);
     } else {
       setYear(request.label);
-
     }
   };
 
@@ -49,6 +47,10 @@ const LandingPage = () => {
       console.log(error);
     }
   }
+  
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   useEffect(() => {
     setLoading(true);
