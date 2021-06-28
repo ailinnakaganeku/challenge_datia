@@ -34,14 +34,11 @@ const LandingPage = () => {
     try {
       const response = await axios.get(API, headers);
       if (response) {
-        if (!year) {
-          setMovies([...movies, ...response.data.results]);
-          setTotalPages(response.data.total_pages);
-        } else if (year && page > 1) {
-          setMovies([...movies, ...response.data.results]);
+        if (year && page === 1) {
+          setMovies(response.data.results);
           setTotalPages(response.data.total_pages);
         } else {
-          setMovies(response.data.results);
+          setMovies([...movies, ...response.data.results]);
           setTotalPages(response.data.total_pages);
         }
       }
@@ -50,10 +47,6 @@ const LandingPage = () => {
       console.log(error);
     }
   }
-
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, []);
 
   useEffect(() => {
     setLoading(true);
