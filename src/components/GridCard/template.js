@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container, Image } from './styles';
-import { nanoid } from 'nanoid';
 
-const TemplateGridCard = ({ movieId, movieName, image }) => {
+const TemplateGridCard = ({ key, movieId, movieName, image }) => {
   return (
-    <Container key={nanoid()} id={movieId}>
+    <Container key={key} id={movieId}>
       <a href={`/movie/${movieId}`}>
-        <Image alt={movieName} src={image} loading='lazy' />
+        <Image alt={movieName} src={image} />
       </a>
     </Container>
   );

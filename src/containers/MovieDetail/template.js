@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { en as string } from '../../assets/strings/eng.json';
+import { nanoid } from 'nanoid';
 
 //Components
 import GridCard from '../../components/GridCard/container';
@@ -26,8 +27,6 @@ import {
 } from './styles';
 import { LogoName } from '../../components/NavBar/styles';
 import { Movies } from '../LandingPage/styles';
-
-import { nanoid } from 'nanoid';
 import { colors } from '../../assets/colors';
 
 const TemplateMovieDetail = ({

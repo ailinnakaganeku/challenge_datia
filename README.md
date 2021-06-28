@@ -26,6 +26,7 @@ React js and Styled Components.
 - [ ] Add prop types.
 - [ ] Add more animations.
 - [ ] Improve SEO.
+- [ ] Saving genres of movies selected in context and rendering suggested movies randomly of this genre.
 
 ---
 
