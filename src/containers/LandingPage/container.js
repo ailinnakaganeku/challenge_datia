@@ -11,7 +11,7 @@ const LandingPage = () => {
   const [page, setPage] = useState(1);
 
   const API = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=${page}&primary_release_year=${year}`;
-  
+
   const headers = {
     'Content-Type': 'application/json',
   };
@@ -22,6 +22,7 @@ const LandingPage = () => {
       setMovies([]);
     } else {
       setYear(request.label);
+      setPage(1);
     }
   };
 
