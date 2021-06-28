@@ -186,7 +186,7 @@ export const ModalText = styled.p`
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 9;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     max-width: 90%;
     text-align: start;
