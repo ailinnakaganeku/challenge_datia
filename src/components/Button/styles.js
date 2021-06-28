@@ -29,9 +29,10 @@ export const Button = styled.button`
     padding: 12px 35px;
   }
 `;
-export const Span = styled.h5`
+export const Span = styled.span`
   color: ${colors.black};
   font-size: 16px;
+  font-weight: 700;
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     font-size: 13px;
   }
