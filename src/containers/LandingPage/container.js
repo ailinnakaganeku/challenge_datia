@@ -17,9 +17,11 @@ const LandingPage = () => {
   const handleOnChangeYears = (request) => {
     if (!request) {
       setYear('');
+      setMovies([]);
     } else {
-      setYear(request.label);
+      setMovies([]);
       setPage(1);
+      setYear(request.label);
     }
   };
 
