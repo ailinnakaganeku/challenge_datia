@@ -12,7 +12,7 @@ _Clone the repository_
 
 _👉 npm install_
 
-_👉 add config file with API and API KEYS_
+_👉 add config file with API and API KEYS(this step is going to be visible only if the repo could be public)_
 
 _👉 npm start_
 
