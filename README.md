@@ -6,7 +6,7 @@ _2 days Challenge consuming The Movie Database (TMDb)_
 
 ## Starting 🚀
 
-_Clone the repository_
+_Clone the repository. The folder organization is: Container for logic part, Styles for styling and Template for component's markup/template_
 
 ### Installation 🔧
 
