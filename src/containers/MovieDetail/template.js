@@ -121,7 +121,7 @@ const TemplateMovieDetail = ({
           </Suggestions>
           <Movies>
             {suggestedMovies &&
-              suggestedMovies.map((movie) => (
+              suggestedMovies.slice(0,4).map((movie) => (
                 <GridCard
                   image={
                     movie.poster_path
