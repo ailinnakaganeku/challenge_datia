@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { en as string } from '../../assets/strings/eng.json';
-import { nanoid } from 'nanoid';
 
 //Components
 import GridCard from '../../components/GridCard/container';
