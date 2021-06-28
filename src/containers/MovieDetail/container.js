@@ -36,7 +36,6 @@ const MovieDetail = (props) => {
       if (response) {
         setPage(random);
         setMovies(response.data);
-        setLoading(false);
       }
       setLoading(false);
     } catch (error) {
