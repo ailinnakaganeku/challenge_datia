@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Movies, Pagination, Text, Line, Fragment } from './styles';
 import { en as string } from '../../assets/strings/eng.json';
-import { nanoid } from 'nanoid';
 
 //Components
 import GridCard from '../../components/GridCard/container';
