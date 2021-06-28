@@ -293,7 +293,7 @@ export const Background = styled.img`
 
 export const Span = styled.span`
   color: ${colors.white};
-  margin-right: 1.1em;
+  margin-right: 0.7em;
   padding: 1px;
   @media (max-width: ${breakpoints.mobileMin}) {
     font-size: 16px;
