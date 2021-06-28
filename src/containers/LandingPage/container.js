@@ -3,6 +3,10 @@ import TemplateLandingPage from './template';
 import axios from 'axios';
 import { API_KEY, API_URL } from '../../config';
 
+const headers = {
+  'Content-Type': 'application/json',
+};
+
 const LandingPage = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -10,16 +14,9 @@ const LandingPage = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [page, setPage] = useState(1);
 
-  const API = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=${page}&primary_release_year=${year}`;
-
-  const headers = {
-    'Content-Type': 'application/json',
-  };
-
   const handleOnChangeYears = (request) => {
     if (!request) {
       setYear('');
-      setMovies([]);
     } else {
       setYear(request.label);
       setPage(1);
@@ -30,7 +27,9 @@ const LandingPage = () => {
     setPage(page + 1);
   };
 
-  async function getMovies(API) {
+  const getMovies = React.useCallback(async () => {
+    const API = `${API_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=${page}&primary_release_year=${year}`;
+    setLoading(true);
     try {
       const response = await axios.get(API, headers);
       if (response) {
@@ -38,20 +37,20 @@ const LandingPage = () => {
           setMovies(response.data.results);
           setTotalPages(response.data.total_pages);
         } else {
-          setMovies([...movies, ...response.data.results]);
+          setMovies((movies) => [...movies, ...response.data.results]);
           setTotalPages(response.data.total_pages);
         }
       }
       setLoading(false);
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
-  }
+  }, [page, year]);
 
   useEffect(() => {
-    setLoading(true);
-    getMovies(API);
-  }, [page, year]);
+    getMovies();
+  }, [getMovies]);
 
   return (
     <TemplateLandingPage
