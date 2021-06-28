@@ -35,7 +35,6 @@ const MovieDetail = (props) => {
       const response = await axios.get(API, headers);
       if (response) {
         setPage(random);
-        console.log('ACA BY ID');
         console.log(response);
         setMovies(response.data);
         setLoading(false);
@@ -51,7 +50,6 @@ const MovieDetail = (props) => {
     try {
       const response = await axios.get(API, headers);
       if (response) {
-        console.log('ACA BY SUGG');
         console.log(response);
         setSuggestedMovies(response.data.results);
         console.log(suggestedMovies);
