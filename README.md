@@ -20,14 +20,5 @@ _👉 npm start_
 
 React js and Styled Components.
 
-## ToDo:
-
-- [ ] Add Modal with video trailers when user clicks on "Watch Now" button.
-- [ ] Add prop types.
-- [ ] Add more animations.
-- [ ] Improve SEO.
-- [ ] Saving genres of movies selected in context and rendering suggested movies randomly of this genre.
-
----
 
 Made with ❤️ by [Ailin](https://github.com/ailinnakaganeku) 😊
