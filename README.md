@@ -4,6 +4,12 @@
 
 _2 days Challenge consuming The Movie Database (TMDb)_
 
+(https://github.com/ailinnakaganeku/challenge_datia/blob/master/src/assets/images/Screen%20Shot%202021-09-23%20at%2023.46.21.png)
+(https://github.com/ailinnakaganeku/challenge_datia/blob/master/src/assets/images/Screen%20Shot%202021-09-23%20at%2023.53.06.png)
+(https://github.com/ailinnakaganeku/challenge_datia/blob/master/src/assets/images/Screen%20Shot%202021-09-23%20at%2023.47.24.png)
+(https://github.com/ailinnakaganeku/challenge_datia/blob/master/src/assets/images/Screen%20Shot%202021-09-23%20at%2023.47.37.png)
+(https://github.com/ailinnakaganeku/challenge_datia/blob/master/src/assets/images/Screen%20Shot%202021-09-23%20at%2023.47.49.png)
+
 ## Starting 🚀
 
 _Clone the repository. The folder organization is: Container for logic part, Styles for styling and Template for component's markup/template_
