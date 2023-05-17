@@ -13,9 +13,6 @@ export const Button = styled.button`
   white-space: nowrap;
   text-align: center;
   border-radius: 500px;
-  :hover {
-    transform: translateY(-7px);
-  }
   @media (max-width: ${breakpoints.mobileDinosaur}) {
     padding: 10px 35px;
   }

@@ -29,10 +29,6 @@ export const Image = styled.img`
   max-width: 250px;
   display: inline-block;
   border-radius: 4px;
-  box-shadow: 10px 10px 5px ${colors.violet};
-  -moz-box-shadow: 10px 10px 5px ${colors.violet};
-  -webkit-box-shadow: 10px 10px 5px ${colors.violet};
-  -khtml-box-shadow: 10px 10px 5px ${colors.violet};
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
